@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DS+02ynIsPB5dOQGs0bp/4lDeZycg13OxD/5TmqlsyQ=",
+  "Source": "TicketAssignerAPI",
+  "BasePath": "_content/TicketAssignerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
