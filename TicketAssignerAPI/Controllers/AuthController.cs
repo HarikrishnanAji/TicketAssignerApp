@@ -12,6 +12,7 @@ namespace TicketAssignerAPI.Controllers
     public class AuthController : Controller
     {
         public static UserModel user = new UserModel();
+        private object response;
         private readonly IConfiguration _config;
         public AuthController(IConfiguration config)
         {
@@ -24,11 +25,22 @@ namespace TicketAssignerAPI.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserModel>> Register(UserDto request)
         {
-            CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);
-            user.Email = request.Email;
-            user.PasswordHash = passwordHash;
-            user.PasswordSalt = passwordSalt;
-            return Ok(user);
+            try
+            {
+                CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);
+                user.Username = request.UserName;
+                user.Email = request.Email;
+                user.PasswordHash = passwordHash;
+                user.PasswordSalt = passwordSalt;
+                user.DC = DateTime.Now;
+                user.LU = DateTime.Now;
+                response = user;
+            }
+            catch(Exception ex) 
+            {
+                response = ex.Message; 
+            }
+            return Ok(response);
         }
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {

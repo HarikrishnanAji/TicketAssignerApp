@@ -16,7 +16,7 @@ namespace TicketAssignerAPI.Model
         public string RefreshToken { get; set; } = string.Empty;
         public DateTime TokenCreated { get; set; }
         public DateTime TokenExpires { get; set; }
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
         public DateTime DC { get; set; }
         public DateTime DD { get; set; }
         public DateTime LU { get; set; }

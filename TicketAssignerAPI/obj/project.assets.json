@@ -307,10 +307,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.14": {
+      "Microsoft.EntityFrameworkCore.Tools/7.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.14"
+          "Microsoft.EntityFrameworkCore.Design": "7.0.7"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -1746,17 +1746,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.14": {
-      "sha512": "RjGysXi4k0yM7b2Znyasdhqu5FxOeuyZzo9g2w/ZhP87VsgFeoiykDPs69qIGTjjLbW0N5+srrl439ZQnMlHXw==",
+    "Microsoft.EntityFrameworkCore.Tools/7.0.7": {
+      "sha512": "Q5iBac9t7Elrx5qnB0A4V1RlInZrmSYe+FlMdV887Cv+arZXKW80N0gydXJJ2ghD62PoDf4LL/7kJ/uc4GyJlg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/7.0.14",
+      "path": "microsoft.entityframeworkcore.tools/7.0.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.7.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.7.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -3929,7 +3929,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.17",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.14",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4007,7 +4007,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.14, )"
+            "version": "[7.0.7, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

@@ -1,6 +1,6 @@
-﻿using System.Data.Entity.ModelConfiguration.Conventions;
-using TicketAssignerAPI.Model;
+﻿
 using Microsoft.EntityFrameworkCore;
+using TicketAssignerAPI.Model;
 
 namespace TicketAssignerAPI.Context
 {
@@ -12,6 +12,11 @@ namespace TicketAssignerAPI.Context
         }
         public DbSet<UserModel> Users { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder
+                .UseSqlServer(@"Server=(localdb)\Local;Database=PearlDB;Trusted_Connection=True;");
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder) { 
             modelBuilder.Entity<UserModel>().ToTable("Users");
         }

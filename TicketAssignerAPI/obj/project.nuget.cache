@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6ITfp3Uw7fgKptXOcxgUeYJYnBEKrZnxUWMrpVRImAfp6P3Rl2Cmy4pwLBsjdB3C0EQYSQwHzu4xI5qClQOsjQ==",
+  "dgSpecHash": "ZyLCxJd92rNN/lSIt4PvEA+9dk6erofO6JHw2dzBZD/LpWfkX8ZdDAwAKGthxZRHeZeoj5qXo6w440yEWjTQiw==",
   "success": true,
   "projectFilePath": "E:\\TicketAssignerApp\\TicketAssignerAPI\\TicketAssignerAPI.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,7 @@
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.17\\microsoft.entityframeworkcore.design.7.0.17.nupkg.sha512",
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.17\\microsoft.entityframeworkcore.relational.7.0.17.nupkg.sha512",
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.17\\microsoft.entityframeworkcore.sqlserver.7.0.17.nupkg.sha512",
-    "C:\\Users\\harik\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.14\\microsoft.entityframeworkcore.tools.7.0.14.nupkg.sha512",
+    "C:\\Users\\harik\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.7\\microsoft.entityframeworkcore.tools.7.0.7.nupkg.sha512",
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\harik\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
