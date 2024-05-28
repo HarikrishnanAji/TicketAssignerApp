@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="registerCenter">
+        <form (ngSubmit)="onRegister(user)">
+            <h1 id="message">Sign up</h1>
+            <small id="smallMessage"></small>
+            <div class="field">
+                <input [(ngModel)]="user.userName" type="text" name="userName" placeholder="Enter your name" id="name" autocomplete="off" required>
+                <label for="name">User Name</label>
+            </div>
+            <div class="field">
+                <input [(ngModel)]="user.email" type="email" name="email" placeholder="Email" id="email" autocomplete="off" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="field">
+                <input [(ngModel)]="user.password" type="password" name="password" placeholder="Password" id="password" autocomplete="new-password" required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit">Signup Now</button>
+            <p>By signing in, you agree to the Terms of Service and Privacy Policy</p>
+            <p>Already have an account?
+                <a [routerLink]="['/login']">Login now</a>
+            </p>
+            <br>
+        </form>
+    </div>
+</div>
