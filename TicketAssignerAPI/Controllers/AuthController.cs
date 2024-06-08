@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using TicketAssignerAPI.Context;
 using TicketAssignerAPI.Model;
 
 namespace TicketAssignerAPI.Controllers
@@ -14,9 +15,11 @@ namespace TicketAssignerAPI.Controllers
         public static UserModel user = new UserModel();
         private object response;
         private readonly IConfiguration _config;
-        public AuthController(IConfiguration config)
+        private readonly TicketAssignerDbContext _context;
+        public AuthController(IConfiguration config,TicketAssignerDbContext context)
         {
             _config = config;
+            _context = context;
         }
 
 
@@ -34,6 +37,8 @@ namespace TicketAssignerAPI.Controllers
                 user.PasswordSalt = passwordSalt;
                 user.DC = DateTime.Now;
                 user.LU = DateTime.Now;
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
                 response = user;
             }
             catch(Exception ex) 

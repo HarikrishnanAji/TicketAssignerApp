@@ -15,10 +15,10 @@ namespace TicketAssignerAPI.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseSqlServer(@"Server=(localdb)\Local;Database=PearlDB;Trusted_Connection=True;");
+                .UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=devDB;Trusted_Connection=True;Integrated Security = True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder) { 
-            modelBuilder.Entity<UserModel>().ToTable("Users");
+            modelBuilder.Entity<UserModel>().ToTable("Users",schema:"App").HasIndex(u=>u.Username).IsUnique();
         }
     }
 }

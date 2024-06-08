@@ -7,11 +7,13 @@ import { RegisterComponent } from "./componets/register/register.component";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { EncryptionService } from "./componets/services/encryption.service";
+import { DashboardComponent } from "./componets/dashboard/dashboard.component";
 
 @NgModule({
     declarations: [
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        DashboardComponent
     ],
     imports: [
       

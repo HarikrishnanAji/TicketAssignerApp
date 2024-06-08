@@ -1,17 +1,17 @@
 
     <div class="container">
-        <form autocomplete="off" id="loginform">
+        <form (ngSubmit)="onLogin(user)">
             <h1 id="message">Sign in</h1>
             <small id="smallMessage"></small>
             <div class="field">
-                <input type="email" [(ngModel)]="user.userName" name="email" placeholder="Email" id="email" autocomplete="off">
+                <input type="email" [(ngModel)]="user.email" name="email" placeholder="Email" id="email" autocomplete="off" required>
                 <label for="email">Email</label>
             </div>
             <div class="field">
-                <input [(ngModel)]="user.password" type="password" name="password" placeholder="Password" id="password" autocomplete="new-password">
+                <input [(ngModel)]="user.password" type="password" name="password" placeholder="Password" id="password" autocomplete="new-password" required>
                 <label for="password">Password</label>
             </div>
-            <button onClick="onLogin(user)" id="submit" >Login Now</button>
+            <button type="submit" >Login Now</button>
             <p>By signing up, you agree to the Terms of Service and Privacy Policy</p>
             <p >Don't have an account?
                 <a [routerLink]="['/register']">Signup now</a>

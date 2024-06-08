@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TicketAssignerAPI.Context;
 
@@ -11,9 +12,11 @@ using TicketAssignerAPI.Context;
 namespace TicketAssignerAPI.Migrations
 {
     [DbContext(typeof(TicketAssignerDbContext))]
-    partial class TicketAssignerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240607192119_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,14 +69,11 @@ namespace TicketAssignerAPI.Migrations
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
 
-                    b.HasIndex("Username")
-                        .IsUnique();
-
-                    b.ToTable("Users", "App");
+                    b.ToTable("Users", (string)null);
                 });
 #pragma warning restore 612, 618
         }
