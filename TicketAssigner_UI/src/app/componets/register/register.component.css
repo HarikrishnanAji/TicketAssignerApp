@@ -3,7 +3,12 @@
 
 .container {
     height: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .registerCenter {

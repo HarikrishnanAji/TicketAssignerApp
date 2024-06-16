@@ -8,12 +8,14 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { EncryptionService } from "./componets/services/encryption.service";
 import { DashboardComponent } from "./componets/dashboard/dashboard.component";
+import { HomeComponent } from "./componets/home/home.component";
 
 @NgModule({
     declarations: [
         LoginComponent,
         RegisterComponent,
-        DashboardComponent
+        DashboardComponent,
+        HomeComponent
     ],
     imports: [
       

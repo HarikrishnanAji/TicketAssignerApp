@@ -1,0 +1,15 @@
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.csproj.AssemblyReference.cache
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.GeneratedMSBuildEditorConfig.editorconfig
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.AssemblyInfoInputs.cache
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.AssemblyInfo.cs
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.csproj.CoreCompileInputs.cache
+E:\TicketAssignerApp\DatasetGenerator\bin\Debug\net7.0\DatasetGenerator.exe
+E:\TicketAssignerApp\DatasetGenerator\bin\Debug\net7.0\DatasetGenerator.deps.json
+E:\TicketAssignerApp\DatasetGenerator\bin\Debug\net7.0\DatasetGenerator.runtimeconfig.json
+E:\TicketAssignerApp\DatasetGenerator\bin\Debug\net7.0\DatasetGenerator.dll
+E:\TicketAssignerApp\DatasetGenerator\bin\Debug\net7.0\DatasetGenerator.pdb
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.dll
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\refint\DatasetGenerator.dll
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.pdb
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\DatasetGenerator.genruntimeconfig.cache
+E:\TicketAssignerApp\DatasetGenerator\obj\Debug\net7.0\ref\DatasetGenerator.dll

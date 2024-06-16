@@ -76,9 +76,17 @@
               "target": "Package",
               "version": "[7.0.7, )"
             },
+            "NumSharp": {
+              "target": "Package",
+              "version": "[0.30.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "TensorFlow.Keras": {
+              "target": "Package",
+              "version": "[0.15.0, )"
             }
           },
           "imports": [
